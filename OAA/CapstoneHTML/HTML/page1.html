@@ -5,60 +5,81 @@
   <title>Future Projects</title>
   <style>
     /* Reset some default styles in browsers */
-    body, h1, h2, ul {
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-    /* Apply a background color to the body */
+    /* Apply a background color to the body and set text color */
     body {
-      background-color: #f4f4f4;
+      background-color: #e9ecef;
       font-family: 'Arial', sans-serif;
-      color: #333;
+      color: #495057;
       line-height: 1.6;
+      padding-top: 70px; /* Adjusted space for fixed nav */
     }
     /* Center the content and apply a max-width */
-    /*container {*/
-    /*  max-width: 800px;*/
-    /*  margin: auto;*/
-    /*  overflow: hidden;*/
-    /*}*/
+    .container {
+      width: 80%;
+      margin: auto;
+    }
     /* Style the navigation bar */
     nav {
-      background: #50b3a2;
+      background: #6c757d;
       color: #ffffff;
-      padding-top: 10px;
-      min-height: 70px;
-      border-bottom: #bbb 1px solid;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
     }
     nav ul {
-      padding: 0 20px;
-      list-style: none;
-      overflow: hidden;
+      list-style-type: none;
     }
     nav ul li {
-      float: left;
-      display: block;
-      padding: 0 15px;
+      display: inline;
+      margin-right: 20px;
     }
     nav ul li a {
       text-decoration: none;
       color: white;
+      font-weight: bold;
+      transition: color 0.4s ease-in;
+    }
+    nav ul li a:hover {
+      color: #ffc107;
     }
     /* Style the sections */
     section {
-      padding: 20px;
-      margin-bottom: 20px;
       background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px 0px #ccc;
     }
     /* Style the headings */
     h1, h2 {
-      color: #333;
+      color: #212529;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 1em;
     }
     /* Style the image */
     img {
       display: block;
       margin: 20px auto;
       max-width: 100%;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -85,7 +106,7 @@
     <h2>Project 3</h2>
     <p>Description of Project 3.</p>
   </section>
-  <img src="" alt="Project Image" />
+  <img src="project_image.jpg" alt="Project Image" />
 </div>
 </body>
 </html>

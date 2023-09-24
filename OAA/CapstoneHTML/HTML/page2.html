@@ -1,31 +1,112 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Future Projects</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="page1.html">Page 1</a></li>
-        <li><a href="page2.html">Page 2</a></li>
-        <li><a href="page3.html">Page 3</a></li>
-        <li><a href="page4.html">Page 4</a></li>
-      </ul>
-    </nav>
-    <form>
-      <fieldset>
-        <legend>Project Details</legend>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" /><br />
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" /><br />
-        <label for="subscribe">Subscribe to Updates:</label>
-        <input type="checkbox" id="subscribe" name="subscribe" /><br />
-        <label for="comments">Comments:</label><br />
-        <textarea id="comments" name="comments" rows="4" cols="50"></textarea
-        ><br />
-        <button type="submit">Submit</button>
-      </fieldset>
-    </form>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Future Projects</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #e9ecef;
+      margin: 0;
+      padding: 0;
+      color: #495057;
+    }
+
+    nav {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav ul {
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.4s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #b9bbbe;
+    }
+
+    #project-form {
+      width: 50%;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    fieldset {
+      border: none;
+    }
+
+    label, input, textarea {
+      display: block;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.4s ease-in-out;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <ul id="navbar">
+    <li><a href="page1.html">Page 1</a></li>
+    <li><a href="page2.html">Page 2</a></li>
+    <li><a href="page3.html">Page 3</a></li>
+    <li><a href="page4.html">Page 4</a></li>
+  </ul>
+</nav>
+<form id="project-form">
+  <fieldset>
+    <legend>Project Details</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required/><br/>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required/><br/>
+    <label for="subscribe">Subscribe to Updates:</label>
+    <input type="checkbox" id="subscribe" name="subscribe"/><br/>
+    <label for="comments">Comments:</label><br/>
+    <textarea id="comments" name="comments" rows="4" cols="50" required></textarea><br/>
+    <button type="submit">Submit</button>
+  </fieldset>
+</form>
+</body>
 </html>
